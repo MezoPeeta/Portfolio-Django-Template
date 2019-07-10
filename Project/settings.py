@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['www.mazenomar.tk', 'mazenomar.tk']
 COPY_START_YEAR = 2019
 
 INSTALLED_APPS = [
+    'herokuapp',
     'blog',
     'django.contrib.admin',
     'django.contrib.auth',

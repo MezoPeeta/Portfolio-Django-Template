@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="/static/blog/main.css">
+{% block content %}
+<h1 class="title"> Mazen Omar</h1>
+    <center>
+        <div id="wow">
+        <button onclick="location.href = '{% url "About" %}'"; class="home">About Me</button>
+        <button onclick="location.href = '{% url "Projects" %}'"; class="projects">My Projects</button>
+    </div>
+
+    </div>
+</center>
+</div>
+
+{% endblock content %}

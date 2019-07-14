@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'zxcvbn_password',
     'admin_honeypot',
     'blog',
     'django.contrib.admin',

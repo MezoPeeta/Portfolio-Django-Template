@@ -23,13 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '47^@ec=c1)=jz3##vi030ow@1uk1@z&8d@$kmi0_e6@*e@h+c)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['www.mazenomar.tk', 'mazenomar.tk']
+ALLOWED_HOSTS = []
 
 
 # Application definition
-COPY_START_YEAR = 2019
 
 INSTALLED_APPS = [
     'zxcvbn_password',

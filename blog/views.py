@@ -31,7 +31,7 @@ def blog(request):
     context = {
         'posts': Post.objects.all()
     }
-    return render(request, 'blog/blog.html',context) #You must add title for the Blog! Remember that!
+    return render(request, 'blog/blog.html',context) #I must add title for the Blog! Remember that!
 
 
 

@@ -1,11 +1,11 @@
 {% extends "blog/base.html" %}
 {% load static %}
-<link rel="stylesheet" type="text/css" href="/static/blog/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/blog/main.css">
 {% block content %}
 {% for img in image %}
     <div class="responsive">
         <div class="polaroid">
-            <img src="/media/{{img.Image}}" alt="My Images" width="100%">
+            <img src="/media/{{img.image}}" width="100%">
                 <div class="container">
                 <p>{{img.Title}}</p>
             </div>

@@ -1,6 +1,6 @@
 
 body {
-    background: url(/static/blog/4.jpg) no-repeat center center fixed; 
+    background: url("/static/blog/4.15413a89ded2.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -278,18 +278,15 @@ body {
       opacity: 0.7;
   }
   
-  .fa-facebook,.fa-facebook:hover {
-    text-align: right;
-    color: blue;
+  .fa-facebook {
+    color: white;
   }
   
-  .fa-twitter, .fa-twitter:hover{
-    text-align: right;
-    color: cyan;
+  .fa-twitter {
+    color: white;
   }
   .fa-instagram, .fa-instagram:hover {
-    text-align: right;
-    color: hotpink;
+    background: linear-gradient(to bottom, #405de6 0%, #5851db ,#833ab4,#c13584,#e1306c,#fd1d1d,#f56040,#f77737,#fcaf45,#ffdc80 100%);  
   }
  
   .fa {

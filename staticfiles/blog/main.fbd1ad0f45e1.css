@@ -1,6 +1,6 @@
 
 body {
-    background: url(/static/blog/4.jpg) no-repeat center center fixed; 
+    background: url("/static/blog/4.15413a89ded2.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -278,20 +278,17 @@ body {
       opacity: 0.7;
   }
   
-  .fa-facebook,.fa-facebook:hover {
-    text-align: right;
-    color: blue;
+  .fa-facebook {
+    color: white;
   }
   
-  .fa-twitter, .fa-twitter:hover{
-    text-align: right;
-    color: cyan;
+  .fa-twitter {
+    color: white;
   }
-  .fa-instagram, .fa-instagram:hover {
-    text-align: right;
+  .fa-instagram.a {
     color: hotpink;
+    color: white;
   }
- 
   .fa {
     padding: 20px;
     font-size: 30px;

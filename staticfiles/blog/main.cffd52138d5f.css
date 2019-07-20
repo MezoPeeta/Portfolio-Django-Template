@@ -1,6 +1,6 @@
 
 body {
-    background: url(/static/blog/4.jpg) no-repeat center center fixed; 
+    background: url("/static/blog/4.15413a89ded2.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -279,16 +279,13 @@ body {
   }
   
   .fa-facebook,.fa-facebook:hover {
-    text-align: right;
     color: blue;
   }
   
   .fa-twitter, .fa-twitter:hover{
-    text-align: right;
     color: cyan;
   }
   .fa-instagram, .fa-instagram:hover {
-    text-align: right;
     color: hotpink;
   }
  

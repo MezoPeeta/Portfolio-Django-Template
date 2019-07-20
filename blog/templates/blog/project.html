@@ -6,7 +6,7 @@
 {% block content %}
 {% for img in image%}
 
-    <div class="responsive">
+    <!-- <div class="responsive">
         <div class="polaroid">
             <img src="../../../static/blog/Magic-Book.jpg" alt="Project"width="100%">
                 <div class="container">
@@ -38,13 +38,19 @@
                                 </div>  
                             </div>
                             <div class="polaroid">
-                                <img src="../../../static/blog/All-In-One.jpg" alt="Project"width="100%">
+                                <img src="/static/blog/All-In-One.jpg" alt="Project"width="100%">
                                     <div class="container">
                                     <p>All in One</p>
                                     </div>  
-                                </div>    
+                                </div>     -->
+        <div class="responsive">
+            <div class="polaroid">
+            <img src="{{img.Image}}" alt="Project"width="100%">
+            <div class="container">
+             <p>{{img.Title}}</p>
+             </div>  
+               </div>         
                       
         </div>
-    </div>
     {% endfor %}
 {% endblock content %}

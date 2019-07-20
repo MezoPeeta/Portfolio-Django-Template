@@ -1,7 +1,6 @@
 
 body {
-    box-sizing: border-box;
-    background: url(/static/blog/4.jpg) no-repeat center center fixed; 
+    background: url("/static/blog/4.15413a89ded2.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -125,14 +124,15 @@ body {
       box-sizing: border-box;
     }
     div.polaroid {
-      max-width: 500px;
-      float: left;
+      max-width: 300px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       background-color: white;
+      width: 100%;
       height: auto;
+      float: left;
       transition: transform .2s;
+      flex: 33.33%;
       padding: 5px;
-      margin-top: 30px;
       margin-bottom: 25px;
       margin-left: 4px;
     }
@@ -141,13 +141,12 @@ body {
       -webkit-transform: scale(1.5); /* Safari 3-8 */
       transform: scale(1.5); 
     }
-    .responsive:after{
-      content: "";
-      clear: both;
-      display: table;  
-    }
-    .responsive {
+    .responsive{
+      flex-wrap: wrap;
       display: flex;
+      padding: 0 6px;
+      float: left;
+      width: 100%;  
     }
     
     div.container {

@@ -19,4 +19,4 @@ class Contact(models.Model):
 
 class Images(models.Model):
     Title = models.CharField(max_length=100)
-    Image = models.ImageField(upload_to = '../media/' , max_length=100)
+    Image = models.ImageField(upload_to = 'media')

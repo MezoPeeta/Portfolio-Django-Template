@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '47^@ec=c1)=jz3##vi030ow@1uk1@z&8d@$kmi0_e6@*e@h+c)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['https://mazensite.herokuapp.com/', 'mazenomar.tk']
 
 

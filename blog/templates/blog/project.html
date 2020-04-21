@@ -1,0 +1,169 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}  
+<section class="banner_area">
+  <div class="banner_inner d-flex align-items-center">
+      <div class="container">
+          <div class="banner_content text-center">
+              <h2>Portfolio</h2>
+              <div class="page_link">
+                  <a href="/">Home</a>
+                  <a href="/projects">portfolio</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>      
+<br> <br> <br> <br><br> <br><br>  
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+                <div class="modal-content">
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+         
+      
+      <section class="portfolio_area" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="main_title text-left">
+                <h2>quality work <br>
+                  Recently done project </h2>
+              </div>
+            </div>
+          </div>
+          <div class="filters portfolio-filter">
+            <ul>
+              <li class="active" data-filter="*">all</li>
+              <li data-filter=".retouch">retouch</li>
+              <li data-filter=".manipulation"> manipulation</li>
+              <li data-filter=".cover">cover</li>
+              <li data-filter=".upcoming">upcoming</li>
+            </ul>
+          </div>
+      
+      <div class="filters-content">
+        <div class="row portfolio-grid justify-content-center">
+          {% for img in image %}
+          <div class="col-lg-4 col-md-6 all {{ img.Category }}">
+            <div class="portfolio_box">
+              <div class="single_portfolio">
+                <img class="img-fluid w-100" src="{{ img.Image.url }}" alt="">
+                <div class="overlay"></div>
+                <a href="{{ img.Image.url }}" class="img-gal">
+                  <div class="icon">
+                    <span class="lnr lnr-cross"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="short_info">
+                <h4>{{ img.Title }}</h4>
+                <p>{{ img.description }}</p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </section>         
+
+      <!-- ================ Start Testimonial Area =================
+      <div class="testimonial_area section_gap_bottom">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <div class="main_title">
+                <h2>client say about me</h2>
+                <p>It's my pleasure to be working with you</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="testi_slider owl-carousel">
+                  <div class="testi_item">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img src="/static/blog/img/testimonials/t1.jpg" alt="">
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="testi_text">
+                          <h4>Someone</h4>
+                          <p>Blah blah blah</p>                  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testi_item">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img src="/static/blog/img/testimonials/t2.jpg" alt="">
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="testi_text">
+                          <h4>Someone</h4>
+                          <p>Blah blah blah</p>                  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testi_item">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img src="/static/blog/img/testimonials/t1.jpg" alt="">
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="testi_text">
+                          <h4>Elite Martin</h4>
+                      <p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testi_item">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img src="/static/blog/img/testimonials/t2.jpg" alt="">
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="testi_text">
+                          <h4>Davil Saden</h4>
+                      <p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testi_item">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img src="/static/blog/img/testimonials/t1.jpg" alt="">
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="testi_text">
+                          <h4>Someone</h4>
+                      <p>Blah blah blah</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testi_item">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img src="/static/blog/img/testimonials/t2.jpg" alt="">
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="testi_text">
+                          <h4>Someone</h4>
+                          <p>Blah blah blah</p>                  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div> -->
+
+{% endblock content %}

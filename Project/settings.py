@@ -143,8 +143,8 @@ EMAIL_PORT = 587
 
 EMAIL_USE_TLS = True
 
-EMAIL_HOST_USER = 'wildlifemain1@gmail.com'
+EMAIL_HOST_USER = 'EMAIL'
 
-EMAIL_HOST_PASSWORD = 'yvtuubmumcqwflvo'
+EMAIL_HOST_PASSWORD = 'PASS'
 
 
